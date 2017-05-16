@@ -1,6 +1,8 @@
 .App {
   text-align: center;
-  background-color: yellow;
+  color: white;
+
+
 }
 
 .App-logo {
@@ -9,9 +11,8 @@
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+  height: 50px;
+  padding: 25px;
   color: white;
 }
 
@@ -22,4 +23,18 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.Well-style {
+  max-width: 800px;
+  height: 500px;
+  background-image: url(http://t.wallpaperweb.org/wallpaper/movies/1024x768/seinfeld_6medium.jpg);
+}
+
+.App-content {
+  padding: 50px;
+  color: white;
+  background-color:rgba(0, 0, 0, 0.3);
+
+
 }

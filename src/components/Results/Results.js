@@ -6,9 +6,11 @@ import { Button } from 'react-bootstrap';
 class Results extends Component {
   render() {
     return (
-      <div class="App">
+      <div className="App-content">
         <h3>{this.props.end_message}</h3>
-        <p>Your score was: {this.props.score}</p>
+        <br />
+        <h4>Your score was: {this.props.score} out of {this.props.total}</h4>
+        <br />
         <Button bsStyle="primary" onClick={this.props.restartQuiz}>Retry</Button>
       </div>
     )

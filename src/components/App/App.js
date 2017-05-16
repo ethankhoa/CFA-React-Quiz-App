@@ -70,11 +70,12 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Well bsSize="large">
+        <Well className="Well-style" bsSize="large">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" />
-        <h2>Seinfeld Quiz App</h2>
+        <h2 className="App-header">Seinfeld Quiz App</h2>
+        <br />
         {this.state.progress < this.quiz_data.length ? (
-          <div>
+          <div className="App-content">
             <Question current_question={this.quiz_data[this.state.progress].question} />
             <ProgressBar current_step={this.state.progress + 1}
               question_length={this.quiz_data.length} />
@@ -84,7 +85,7 @@ class App extends Component {
           </div>
         )
         : (
-          <Results score={this.state.score} end_message="Congrats! You're done!" restartQuiz={this.restartQuiz} />
+          <Results total={this.quiz_data.length} score={this.state.score} end_message="Congrats! You're done!" restartQuiz={this.restartQuiz} />
         )}
         </Well>
       </div>
