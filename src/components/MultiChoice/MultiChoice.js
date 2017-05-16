@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import './MultiChoice.css';
+
 
 class MultiChoice extends Component {
   render() {

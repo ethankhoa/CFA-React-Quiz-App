@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import Question from '../src/components/Question/Question';
-import ProgressBar from '../src/components/ProgressBar/ProgressBar';
-import MultiChoice from '../src/components/MultiChoice/MultiChoice';
-import Results from '../src/components/Results/Results';
+import Question from '../Question/Question';
+import ProgressBar from '../ProgressBar/ProgressBar';
+import MultiChoice from '../MultiChoice/MultiChoice';
+import Results from '../Results/Results';
 
 class App extends Component {
   constructor(props) {
