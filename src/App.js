@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Question from './Question';
+import ProgressBar from './ProgressBar';
 
 class App extends Component {
   constructor(props) {
@@ -28,6 +29,8 @@ class App extends Component {
       <div>
         <h2>Seinfeld Quiz App</h2>
         <Question current_question={this.quiz_data[this.state.progress].question} />
+        <ProgressBar current_step={this.state.progress + 1}
+          question_length={this.quiz_data.length}/>
       </div>
     );
   }
