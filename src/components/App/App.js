@@ -5,6 +5,9 @@ import Question from '../Question/Question';
 import ProgressBar from '../ProgressBar/ProgressBar';
 import MultiChoice from '../MultiChoice/MultiChoice';
 import Results from '../Results/Results';
+import { Well } from 'react-bootstrap';
+
+
 
 class App extends Component {
   constructor(props) {
@@ -67,6 +70,8 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Well bsSize="large">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" />
         <h2>Seinfeld Quiz App</h2>
         {this.state.progress < this.quiz_data.length ? (
           <div>
@@ -81,6 +86,7 @@ class App extends Component {
         : (
           <Results score={this.state.score} end_message="Congrats! You're done!" restartQuiz={this.restartQuiz} />
         )}
+        </Well>
       </div>
     );
   }
