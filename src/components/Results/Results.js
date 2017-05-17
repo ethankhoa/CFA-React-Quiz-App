@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './Results.css';
 import { Button } from 'react-bootstrap';
+import PropTypes from 'prop-types';
+
 
 
 class Results extends Component {
@@ -15,6 +17,17 @@ class Results extends Component {
       </div>
     )
   }
+}
+
+Results.propTypes = {
+  end_message: PropTypes.string,
+  score: PropTypes.number.isRequired,
+  restartQuiz: PropTypes.func
+}
+
+Results.defaultProps = {
+  end_message: "You have completed the quiz!",
+  score: 0
 }
 
 export default Results;

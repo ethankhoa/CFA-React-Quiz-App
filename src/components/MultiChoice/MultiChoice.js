@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './MultiChoice.css';
 import { Button, ButtonToolbar } from 'react-bootstrap';
+import PropTypes from 'prop-types';
+
 
 
 class MultiChoice extends Component {
@@ -17,6 +19,13 @@ class MultiChoice extends Component {
       </div>
     )
   }
+}
+
+MultiChoice.propTypes = {
+  answers: PropTypes.arrayOf(PropTypes.string),
+  updateSelected: PropTypes.func,
+  handleSubmit: PropTypes.func,
+  selectedAnswer: PropTypes.string
 }
 
 export default MultiChoice;
