@@ -5,7 +5,8 @@ import Question from '../Question/Question';
 import ProgressBar from '../ProgressBar/ProgressBar';
 import MultiChoice from '../MultiChoice/MultiChoice';
 import Results from '../Results/Results';
-import { Well } from 'react-bootstrap';
+import { Well, PageHeader } from 'react-bootstrap';
+import Progress from 'react-progressbar';
 
 
 
@@ -67,16 +68,27 @@ class App extends Component {
     })
   }
 
+
+
   render() {
+    let quizComplete = ((this.state.progress + 1)/this.quiz_data.length) * 100;
     return (
       <div>
-        <Well className="Well-style" bsSize="large">
+        <Well bsSize="large">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" />
-        <h2 className="App-header">Seinfeld Quiz App</h2>
+        <PageHeader>Seinfeld Quiz App
+          <p>
+          <small>
+            How well do you know your Seinfeld trivia?
+          </small>
+          </p>
+        </PageHeader>
+        {/* <h2 className="App-header">Seinfeld Quiz App</h2> */}
         <br />
         {this.state.progress < this.quiz_data.length ? (
           <div className="App-content">
             <Question current_question={this.quiz_data[this.state.progress].question} />
+            <Progress completed={quizComplete} />
             <ProgressBar current_step={this.state.progress + 1}
               question_length={this.quiz_data.length} />
             <MultiChoice answers={this.quiz_data[this.state.progress].possible_answers}

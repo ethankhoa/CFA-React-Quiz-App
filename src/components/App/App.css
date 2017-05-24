@@ -25,10 +25,11 @@
   to { transform: rotate(360deg); }
 }
 
-.Well-style {
-  max-width: 800px;
-  height: 500px;
-  background-color: #4e9a63;
+
+.well {
+  background-image: url(https://images2.alphacoders.com/493/493640.jpg);
+  background-color: #D5E6EE;
+  background-size: contain;
 }
 
 .App-content {

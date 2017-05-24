@@ -1125,7 +1125,7 @@ clap@^1.0.9:
   dependencies:
     chalk "^1.1.3"
 
-classnames@^2.2.5:
+classnames@^2.2.0, classnames@^2.2.5:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
 
@@ -4424,6 +4424,10 @@ react-overlays@^0.7.0:
     react-prop-types "^0.4.0"
     warning "^3.0.0"
 
+react-progressbar@^1.4.6:
+  version "1.4.6"
+  resolved "https://registry.yarnpkg.com/react-progressbar/-/react-progressbar-1.4.6.tgz#03f5ce9ccf3778b158d192a457684553fae7ddb7"
+
 react-prop-types@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/react-prop-types/-/react-prop-types-0.4.0.tgz#f99b0bfb4006929c9af2051e7c1414a5c75b93d0"
@@ -4481,6 +4485,13 @@ react-test-renderer@^15.5.4:
   dependencies:
     fbjs "^0.8.9"
     object-assign "^4.1.0"
+
+react-tooltip@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-3.3.0.tgz#51c08ae0221075e2c43d83cd47fc78466612df7d"
+  dependencies:
+    classnames "^2.2.0"
+    prop-types "^15.5.8"
 
 react@^15.5.4:
   version "15.5.4"
